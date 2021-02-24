@@ -100,10 +100,6 @@ export default Vue.extend({
     galleryThumbs.on('transitionStart', () => {
       galleryMain.slideTo(galleryThumbs.activeIndex)
     })
-
-    window.addEventListener('resize', () => {
-      this.windowWidth = window.innerWidth
-    })
   }
 })
 </script>
@@ -163,23 +159,6 @@ export default Vue.extend({
     padding: 4rem 3rem 3rem;
     line-height: 1.625rem;
     cursor: grabbing;
-  }
-}
-
-.gallery-title {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-family: 'Epilogue', sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  text-align: right;
-  text-transform: uppercase;
-  text-shadow: 0 0 20px rgba(#000, 0.3);
-  color: #ffffff;
-
-  .swiper-slide-active & {
-    animation: slide-in 0.3s ease-in both;
   }
 }
 

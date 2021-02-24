@@ -5,11 +5,3 @@ const initializer = (store: Store<any>) => initializeStores(store)
 
 export const plugins = [initializer]
 export * from '@/utils/store-accessor'
-
-export const state = () => ({})
-
-export type RootState = ReturnType<typeof state>
-
-export const actions: ActionTree<RootState, RootState> = {
-  async nuxtServerInit({ dispatch }) {}
-}

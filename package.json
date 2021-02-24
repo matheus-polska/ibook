@@ -17,7 +17,8 @@
     "core-js": "^3.8.3",
     "json-server": "^0.16.3",
     "nuxt": "^2.14.12",
-    "swiper": "^6.4.15"
+    "swiper": "^6.4.15",
+    "vuex-module-decorators": "^1.0.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",
@@ -33,7 +34,6 @@
     "eslint-plugin-vue": "^7.5.0",
     "node-sass": "^5.0.0",
     "prettier": "^2.2.1",
-    "sass-loader": "^10.1.1",
-    "vuex-module-decorators": "^1.0.1"
+    "sass-loader": "^10.1.1"
   }
 }

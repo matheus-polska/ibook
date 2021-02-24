@@ -7,8 +7,8 @@ import Vue from 'vue'
 import { books } from '~/store'
 
 export default Vue.extend({
-  created() {
-    books.fetchSingleBook(this.$route.params.bookslug)
+  async asyncData({ route }) {
+    await books.fetchSingleBook(route.params.bookslug)
   }
 })
 </script>

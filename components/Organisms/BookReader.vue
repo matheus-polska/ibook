@@ -221,26 +221,7 @@ export default Vue.extend({
     }
   }
 }
-
-/**
- * Optionnal
- */
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    right: -50%;
-  }
+.swiper-button-disabled {
+  opacity: 0.38;
 }
 </style>

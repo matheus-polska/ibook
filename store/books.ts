@@ -22,15 +22,13 @@ export default class Books extends VuexModule {
 
   @MutationAction({ mutate: ['books'], rawError: true })
   async fetchBooks() {
-    const books = await $axios.$get('https://ibookapi.herokuapp.com/books')
+    const books = await $axios.$get('/books')
     return { books }
   }
 
   @MutationAction({ mutate: ['singleBook'], rawError: true })
   async fetchSingleBook(payload: string) {
-    const singleBook = await $axios.$get(
-      `https://ibookapi.herokuapp.com/allbooks/${payload}`
-    )
+    const singleBook = await $axios.$get(`/books/${payload}`)
     return { singleBook }
   }
 }

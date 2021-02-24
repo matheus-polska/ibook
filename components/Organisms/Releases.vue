@@ -2,11 +2,7 @@
   <div class="releases">
     <h2>Lançamentos</h2>
     <div class="releases-books">
-      <BookCard
-        v-for="book in $allBooks.recentReleases"
-        :book="book"
-        :key="book.id"
-      />
+      <BookCard v-for="book in $allBooks" :book="book" :key="book.id" />
     </div>
   </div>
 </template>

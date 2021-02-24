@@ -29,6 +29,7 @@ export default {
     '@/components/Atoms',
     '@/components/Molecules',
     '@/components/Organisms',
+    '@/components/Quarks',
     '@/components/Templates'
   ],
 
@@ -50,7 +51,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'https://ibookapi.herokuapp.com/'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}

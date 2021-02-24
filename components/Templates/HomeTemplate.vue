@@ -2,7 +2,6 @@
   <Container class="home-template">
     <MainTitle text="Bem-vindo ao" span="IBook" />
     <Releases />
-    <MostRead />
   </Container>
 </template>
 

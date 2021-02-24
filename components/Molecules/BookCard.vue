@@ -2,7 +2,7 @@
   <NuxtLink :to="`/${book.id}`">
     <div class="card">
       <div class="card-img">
-        <img :src="book.cover" :alt="`Capa do livro de ${book.title}`" />
+        <img :src="book.cover" :alt="`Capa do livro ${book.title}`" />
       </div>
       <div class="card-body">
         <h4>{{ book.title }}</h4>

@@ -2,6 +2,7 @@
   <div class="book-reader">
     <h2 class="book-title">{{ $singleBook.title }}</h2>
     <div class="gallery-container">
+      <!-- Thumb Nails aqui -->
       <div class="swiper-container gallery-thumbs">
         <div class="swiper-wrapper">
           <div
@@ -14,6 +15,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Páginas aqui -->
       <div class="swiper-container gallery-main">
         <div class="swiper-wrapper">
           <div
@@ -25,6 +28,8 @@
         </div>
       </div>
     </div>
+
+    <!--Setas aqui -->
     <div class="buttons">
       <div class="swiper-button-unique-prev">
         <img src="~/assets/img/arrow.svg" />
@@ -117,19 +122,19 @@ export default Vue.extend({
     grid-gap: 0.22rem;
     justify-content: end;
     margin-top: 0.6rem;
-  }
-  .swiper-button-unique {
-    &-prev,
-    &-next {
-      background: $dark;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
+    .swiper-button-unique {
+      &-prev,
+      &-next {
+        background: $dark;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
 
-    &-next #right-arrow {
-      transform: rotate(180deg);
+      &-next #right-arrow {
+        transform: rotate(180deg);
+      }
     }
   }
 }
@@ -200,6 +205,7 @@ export default Vue.extend({
     }
   }
 }
+
 .swiper-button-disabled {
   opacity: 0.38;
 }

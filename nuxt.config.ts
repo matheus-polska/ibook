@@ -14,14 +14,7 @@ export default {
         content: 'Ibook - New way to read books online'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      {
-        type: 'module',
-        src: '//code-sa1.jivosite.com/widget/bmM4VYU0ww',
-        async: true
-      }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
